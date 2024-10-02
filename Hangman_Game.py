@@ -13,8 +13,32 @@ def greet_the_players():
     print("....")
     print("You may start, Good luck!")
 
-def main():
-    greet_the_players()
+import random
 
-if __name__ =="__main__":
-    main()
+hangman_words = ("apple", "banana", "lychee", "grapes", "orange", "pineapple", "coconut", "watermelon", "lemon", "kiwi")
+
+#dictionary of key():
+hangman_art ={0: ("     ",
+                  "     ",
+                  "     "),
+              1: ("  o  ",
+                  "     ",
+                  "     "),
+              2: ("  o  ",
+                  "  |  ",
+                  "     "),
+              3: ("  o  ",
+                  " /|  ",
+                  "     "),
+              4: ("  o  ",
+                  " /|\\",
+                  "     "),
+              5: ("  o  ",
+                  " /|\\",
+                  " /   "),
+              6: ("  o  ",
+                  " /|\\",
+                  " / \\")}
+
+for line in hangman_art[3]:
+    print(line)
