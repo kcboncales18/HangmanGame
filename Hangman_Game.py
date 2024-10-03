@@ -70,6 +70,12 @@ def main():
             print("Invalid Input")
             continue
 
+        if guess in guessed_letters:
+            print(f"{guess} is already guessed")
+            continue
+
+        guessed_letters.add(guess)
+
         if guess in answer:
             for i in range(len(answer)):
                 if answer[i] == guess:
