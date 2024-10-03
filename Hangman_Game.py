@@ -90,6 +90,11 @@ def main():
             print("Congrats! You Win ;>")
             is_running = False 
 
+        elif wrong_guesses >= len(hangman_art) - 1:
+            display_man(wrong_guesses)
+            display_answer(answer)
+            print("Nahhh...You Lose!:p")
+            is_running = False
 
 if __name__ == "__main__":
     main()
