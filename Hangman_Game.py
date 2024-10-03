@@ -80,6 +80,16 @@ def main():
             for i in range(len(answer)):
                 if answer[i] == guess:
                     hint[i] = guess
+        
+        else:
+            wrong_guesses +=1
+        
+        if "_" not in hint:
+            display_man(wrong_guesses)
+            display_answer(answer)
+            print("Congrats! You Win ;>")
+            is_running = False 
+
 
 if __name__ == "__main__":
     main()
