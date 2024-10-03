@@ -1,4 +1,4 @@
-# Hangman_Game
+# hangman_game
 
 #this_section_handles_the_greetings
 
@@ -17,7 +17,7 @@ import random
 
 hangman_words = ("apple", "banana", "lychee", "grapes", "orange", "pineapple", "coconut", "watermelon", "lemon", "kiwi")
 
-#dictionary of key():
+#dictionary_of_key():
 hangman_art ={0: ("     ",
                   "     ",
                   "     "),
